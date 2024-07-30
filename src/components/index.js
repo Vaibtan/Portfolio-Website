@@ -6,6 +6,7 @@ import Skills from './Skills';
 import Experience from './Experience';
 import Projects from './Projects';
 import Contact from './Contact';
+import CanvasLoader from "./Loader";
 
 export {
   Hero,
@@ -15,8 +16,9 @@ export {
   Experience,
   Projects,
   Contact,
+  CanvasLoader,
   EarthCanvas, 
   BallCanvas, 
   ComputersCanvas, 
   StarsCanvas
-}
+};

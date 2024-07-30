@@ -1,8 +1,8 @@
 import React, { Suspense, useEffect, useState } from "react";
-import { Canvas, extend } from "@react-three/fiber";
+import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
-extend({OrbitControls, Preload, useGLTF})  
+//extend({OrbitControls, Preload, useGLTF})  
 
 const Computers = ({ isMobile }) => {
   const computer = useGLTF('./desktop_pc/scene.gltf')
@@ -12,13 +12,18 @@ const Computers = ({ isMobile }) => {
       <hemisphereLight intensity = {0.15} groundColor = "black" />
       <pointLight intensity = {2} />
       <spotLight  
+        //-21, 45, 7
         position = {[-21, 45, 7]}
-        angle = {0.4}
+        //0.4
+        angle = {0.12}
         penumbra = {1}
         intensity = {1}
         castShadow 
         shadow-mapSize = {1024}
       /> 
+
+      <pointLight intensity = {1} />
+
       <primitive 
         object = {computer.scene} 
         scale = { isMobile ? 0.6 : 0.85 }
@@ -39,14 +44,14 @@ const ComputersCanvas = () => {
     //CALLBACK TO HANDLE CHANGES TO MEDIA QUERY
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);
-    }
+    };
     //CALLBACK AS LISTENER FOR CHANGES TO THE MEDIA QUERY
     mediaQuery.addEventListener('change', handleMediaQueryChange);
     //REMOVE LISTENER WHEN COMPONENT UNMOUNTED
     return () => {
       mediaQuery.removeEventListener('change', handleMediaQueryChange);
-    }
-  }, [])
+    };
+  }, []);
 
   return (
     <Canvas
