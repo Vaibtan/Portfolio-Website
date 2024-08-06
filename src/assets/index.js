@@ -7,6 +7,13 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
+import python from "./tech/python.png"
+import C from "./tech/C.png"
+import cpp from "./tech/cpp.svg"
+import streamlit from "./tech/streamlit.png"
+import tinygrad from "./tech/tinygrad.png"
+import scikit from "./tech/scikit_learn.png"
+import Pytorch from "./tech/Pytorch.png"
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -20,11 +27,7 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import iiitd from "./company/iiitd.png"
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -39,11 +42,18 @@ export {
   github,
   menu,
   close,
+  python,
+  C,
+  cpp,
   css,
   docker,
   figma,
   git,
   html,
+  streamlit,
+  scikit,
+  tinygrad,
+  Pytorch,
   javascript,
   mongodb,
   nodejs,
@@ -52,10 +62,7 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+  iiitd,
   carrent,
   jobit,
   tripguide,

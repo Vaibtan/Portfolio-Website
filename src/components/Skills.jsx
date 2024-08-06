@@ -22,8 +22,8 @@ const SkillCard = ({ index, name, icon }) => {
           }}
           className = 'bg-tertiary rounded-[20px] py-5 px-12 min-h-[150px] flex justify-evenly items-center flex-col'
         >
-          <img src = {icon} alt = {name} className = 'w-16 h-16 object-contain' />
-          <h3 className = 'text-white text-[20px] font-bold text-center'>
+          <img src = {icon} alt = {name} className = 'w-20 h-20 object-contain' />
+          <h3 className = 'text-white text-[23px] font-bold text-center'>
             {name}
           </h3>
         </div>
