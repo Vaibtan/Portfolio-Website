@@ -29,9 +29,10 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import iiitd from "./company/iiitd.png"
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import neuralODE from "./neuralODE.png";
+import raft from "./raft_consensus.png";
+import marketplace from "./marketplace.png";
+import kmeans from "./kmeans.png";
 
 export {
   logo,
@@ -63,7 +64,8 @@ export {
   typescript,
   threejs,
   iiitd,
-  carrent,
-  jobit,
-  tripguide,
+  neuralODE,
+  raft,
+  marketplace,
+  kmeans,
 };

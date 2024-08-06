@@ -19,9 +19,10 @@ import {
     git,
     docker,
     iiitd,
-    carrent,
-    jobit,
-    tripguide,
+    neuralODE,
+    raft,
+    marketplace,
+    kmeans,
     threejs,
   } from "../assets";
   
@@ -151,68 +152,82 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Stock Market Returns Prediction",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Benchmarked various models on the task of predicting Stock Market Returns using the classical ARIMA method, hybrid PCA-DNN model and State of the Art Deep Learning Models such as CNN variants, Neural ODE variants and GAN, trained on CNNPred Dataset.",
       tags: [
         {
-          name: "react",
+          name: "PyTorch",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "Scikit Learn",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "Pandas",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: neuralODE,
+      source_code_link: "https://github.com/Vaibtan/Machine-Learning-Project",
     },
     {
-      name: "Job IT",
+      name: "Distributed Database with Modified Raft Consensus",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Implemented a database storing string key-value pairs using Raft Consensus Algorithm, ensuring consistent data replication and fault recovery across the distributed network of nodes and utilized the leader lease mechanism, similar to those used by geo distributed databases such as Cockroach DB and YugaByte DB.",
       tags: [
         {
-          name: "react",
+          name: "Python",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "ZeroMQ",
           color: "green-text-gradient",
         },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: raft,
+      source_code_link: "https://github.com/Vaibtan/Distributed-Database-with-Raft-Consensus-Algorithm",
     },
     {
-      name: "Trip Guide",
+      name: "Cloud Native Online Commodity Trading Platform",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Created a distributed online marketplace system, architected to facilitate direct transactions between buyers and sellers through a central platform hosted on Google Cloud VM instances, leveraging gRPC for communication and Protocol Buffers for efficient data serialization.",
       tags: [
         {
-          name: "nextjs",
+          name: "Python",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "gRPC",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "ProtoBuf",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: marketplace,
+      source_code_link: "https://github.com/Vaibtan/CSE-530-Distributed-Systems/tree/main/Assignment%201/gRPC",
     },
+    {
+      name: "K Means using Map Reduce Framework",
+      description:
+        "Implemented a distributed Map-Reduce framework comprising of Master, Mapper and Reducer components to perform K Means Clustering on a given dataset ensuring fault tolerance for both components and utlized gRPC for communication among the three processes for each iteration.",
+      tags: [
+        {
+          name: "Python",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "gRPC",
+          color: "green-text-gradient",
+        },
+      ],
+      image: kmeans,
+      source_code_link: "https://github.com/Vaibtan/CSE-530-Distributed-Systems/tree/main/Assignment%202",
+    },
+
   ];
   
   export { services, technologies, experiences, projects };
