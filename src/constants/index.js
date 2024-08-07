@@ -17,7 +17,7 @@ import {
     nodejs,
     mongodb,
     git,
-    docker,
+    mysql,
     iiitd,
     neuralODE,
     raft,
@@ -115,6 +115,10 @@ import {
       icon: nodejs,
     },
     {
+      name: "MySQL",
+      icon: mysql,
+    },
+    {
       name: "MongoDB",
       icon: mongodb,
     },
@@ -129,10 +133,6 @@ import {
     {
       name: "git",
       icon: git,
-    },
-    {
-      name: "docker",
-      icon: docker,
     },
   ];
   
