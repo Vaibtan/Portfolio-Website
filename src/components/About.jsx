@@ -42,10 +42,10 @@ const About = () => {
         variants = {fadeIn("", "", 0.1, 1)}
        className = 'mt-5 text-secondary text-[25px] font-bold max-w-4xl leading-[40px]'  
       >
-        I'm a skilled software developer with experience in the robotics and finance 
-        sector. I'm a quick learner and collaborate closely with teammates to create 
+        I'm a versatile and detail oriented developer specializing in Machine Learning and development.
+        I'm an avid learner who like to solve algorithmic problems [from P-complexity-class] as a hobby and have collaborated closely with teammates to create 
         efficient, scalable, and user-friendly solutions that solve real-world 
-        problems.
+        problems. Currently open to Researcher / Backend engineer / Software Developer / Analyst roles. 
       </motion.p>
       <div className = 'mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
