@@ -33,6 +33,7 @@ import neuralODE from "./neuralODE.png";
 import raft from "./raft_consensus.png";
 import marketplace from "./marketplace.png";
 import kmeans from "./kmeans.png";
+import cpu from "./cpu.webp";
 
 export {
   logo,
@@ -68,4 +69,5 @@ export {
   raft,
   marketplace,
   kmeans,
+  cpu,
 };

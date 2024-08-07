@@ -24,6 +24,7 @@ import {
     marketplace,
     kmeans,
     threejs,
+    cpu,
   } from "../assets";
   
   export const navLinks = [
@@ -227,7 +228,19 @@ import {
       image: kmeans,
       source_code_link: "https://github.com/Vaibtan/CSE-530-Distributed-Systems/tree/main/Assignment%202",
     },
-
+    {
+      name: "Cycle Accurate Simulator for a 5 stage RISC CPU",
+      description:
+        "Implemented a simulator for a processor based on RV32I variant of RISC-V ISA where the microarchitecture included a 5 stage pipeline allowing forwarding/bypassing and separate execution unit for Network on Chip operations,along with a 2-way set associative cache following Least Recently Used replacement policy.",
+      tags: [
+        {
+          name: "C++",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: cpu,
+      source_code_link: "https://github.com/Vaibtan/CSE511_CA_project",
+    },
   ];
   
   export { services, technologies, experiences, projects };
